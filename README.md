@@ -64,7 +64,7 @@ if (result.hasChanges) {
 
 ## Related packages
 
-- **json-diff-core** — structured changes only (no formatting)
+- **json-diff-engine** — structured changes only (no formatting)
 - **api-response-diff** — breaking vs non-breaking semantics for API bodies
 
 ## Why teams pick this
