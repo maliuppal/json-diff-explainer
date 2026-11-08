@@ -1,0 +1,55 @@
+{
+  "name": "json-diff-explainer",
+  "description": "Human-readable JSON diff lines for tests, CI, and logs—explainJsonDiff with text, lines, and structured changes via json-diff-engine",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "Muhammad Ali <maliuppal@users.noreply.github.com> (https://github.com/maliuppal)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maliuppal/json-diff-explainer.git"
+  },
+  "keywords": [
+    "json",
+    "diff",
+    "compare",
+    "explain",
+    "changelog",
+    "test",
+    "assertion",
+    "human-readable",
+    "ci",
+    "debug",
+    "typescript",
+    "node"
+  ],
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "default": "./lib/index.js"
+    }
+  },
+  "files": [
+    "lib",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "npm run build && mocha test/**/*.mocha.js"
+  },
+  "dependencies": {
+    "json-diff-engine": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.17",
+    "mocha": "^10.3.0",
+    "typescript": "~5.7.2"
+  }
+}
